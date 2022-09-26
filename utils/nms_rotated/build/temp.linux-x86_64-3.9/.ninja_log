@@ -1,0 +1,5 @@
+# ninja log v5
+1	5459	1663683792	/home/leegwang/project/yolo/yolov7/utils/nms_rotated/build/temp.linux-x86_64-3.9/src/nms_rotated_cpu.o	fb6b76f704a14214
+1	12346	1663683799	/home/leegwang/project/yolo/yolov7/utils/nms_rotated/build/temp.linux-x86_64-3.9/src/poly_nms_cuda.o	2c2e690bb7862bcd
+1	13083	1663683800	/home/leegwang/project/yolo/yolov7/utils/nms_rotated/build/temp.linux-x86_64-3.9/src/nms_rotated_ext.o	2150266c20209366
+1	13337	1663683800	/home/leegwang/project/yolo/yolov7/utils/nms_rotated/build/temp.linux-x86_64-3.9/src/nms_rotated_cuda.o	b627849b979c9a56

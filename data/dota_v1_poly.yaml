@@ -1,0 +1,16 @@
+# Train/val/test sets as 1) dir: path/to/imgs, 2) file: path/to/imgs.txt, or 3) list: [path/to/imgs1, path/to/imgs2, ..]
+# path: /home/leegwang/project/yolo/yolov5_obb/dataset/DOTA_v1.0/   # dataset root dir
+# train: train_split1024_gap200/images    # train images (relative to 'path') 
+# val: val_split1024_gap200/images   # val images (relative to 'path') 
+# test: test_split1024/images  # test images (optional)
+#labelTxt
+train: /home/leegwang/project/yolo/yolov7/dataset/train_split1024_gap200/images    # train images (relative to 'path') 
+val: /home/leegwang/project/yolo/yolov7/dataset/val_split1024_gap200/images   # val images (relative to 'path') 
+test: /home/leegwang/project/yolo/yolov7/dataset/test_split1024/images  # test images (optional)
+
+# Classes
+nc: 15  # number of classes
+names: ['plane', 'baseball-diamond', 'bridge', 'ground-track-field', 'small-vehicle', 
+        'large-vehicle', 'ship', 'tennis-court', 'basketball-court', 'storage-tank',  
+        'soccer-ball-field', 'roundabout', 'harbor', 'swimming-pool', 'helicopter']  # class names
+

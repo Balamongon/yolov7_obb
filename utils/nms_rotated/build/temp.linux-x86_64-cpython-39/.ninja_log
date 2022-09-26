@@ -1,0 +1,8 @@
+# ninja log v5
+0	5729	1662101728	/home/leegwang/project/yolo/yolov5_obb/utils/nms_rotated/build/temp.linux-x86_64-cpython-39/src/nms_rotated_cpu.o	6ee34f89cb79776
+8	16044	1662101739	/home/leegwang/project/yolo/yolov5_obb/utils/nms_rotated/build/temp.linux-x86_64-cpython-39/src/nms_rotated_cuda.o	902805845ff987de
+10	16147	1662101739	/home/leegwang/project/yolo/yolov5_obb/utils/nms_rotated/build/temp.linux-x86_64-cpython-39/src/nms_rotated_ext.o	c929d48324b2a95c
+7	6496	1662102332	/home/leegwang/project/yolo/yolov5_obb/utils/nms_rotated/build/temp.linux-x86_64-cpython-39/src/nms_rotated_cpu.o	5c4e10256a7b70b8
+8	13993	1662102340	/home/leegwang/project/yolo/yolov5_obb/utils/nms_rotated/build/temp.linux-x86_64-cpython-39/src/poly_nms_cuda.o	7d4b5ab0f51f0bc3
+8	15219	1662102341	/home/leegwang/project/yolo/yolov5_obb/utils/nms_rotated/build/temp.linux-x86_64-cpython-39/src/nms_rotated_ext.o	1d2ba6178f57a634
+8	15567	1662102341	/home/leegwang/project/yolo/yolov5_obb/utils/nms_rotated/build/temp.linux-x86_64-cpython-39/src/nms_rotated_cuda.o	5fe4d0b547061e41
