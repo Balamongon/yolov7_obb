@@ -1,6 +1,7 @@
 # YOLOv7 for Oriented Object Detection
 
-Implementation of paper - [YOLOv7: Trainable bag-of-freebies sets new state-of-the-art for real-time object detectors](https://arxiv.org/abs/2207.02696)
+Implementation of paper - [YOLOv7: Trainable bag-of-freebies sets new state-of-the-art for real-time object detectors](https://arxiv.org/abs/2207.02696).
+
 The code for the implementation of <Yolov5_obb>(https://github.com/hukaixuan19970627/yolov5_obb).
 
 <img src="./imgs/demo1.png" width="400" height="400"> <img src="./imgs/demo2.png" width="400" height="400">
