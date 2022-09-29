@@ -91,7 +91,7 @@ Please see [yolov5_obb](https://github.com/hukaixuan19970627/yolov5_obb) for dat
 
 ## Training
 
-<!-- Single GPU training
+Single GPU training
 
 ``` shell
 # train yolov7 models
@@ -107,7 +107,7 @@ python train.py \
     --name yolov7 \
     --hyp data/hyp.finetune_dota.yaml \
     --noautoanchor 
-``` -->
+```
 
 Multiple GPU training
 
