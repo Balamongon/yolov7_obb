@@ -84,22 +84,29 @@ You will get the results:
 <!-- To measure accuracy, download [COCO-annotations for Pycocotools](http://images.cocodataset.org/annotations/annotations_trainval2017.zip). -->
 
 #
+
+## Getting Started 
+This repo is based on [yolov7](https://github.com/WongKinYiu/yolov7), [yolov5_obb](https://github.com/hukaixuan19970627/yolov5_obb). 
+Please see [yolov5_obb](https://github.com/hukaixuan19970627/yolov5_obb) for data preparation.
+
 ## Training
-
-Data preparation
-
-``` shell
-
-```
 
 <!-- Single GPU training
 
 ``` shell
-# train p5 models
-python train.py --workers 8 --device 0 --batch-size 32 --data data/coco.yaml --img 640 640 --cfg cfg/training/yolov7.yaml --weights '' --name yolov7 --hyp data/hyp.scratch.p5.yaml
-
-# train p6 models
-python train_aux.py --workers 8 --device 0 --batch-size 16 --data data/coco.yaml --img 1280 1280 --cfg cfg/training/yolov7-w6.yaml --weights '' --name yolov7-w6 --hyp data/hyp.scratch.p6.yaml
+# train yolov7 models
+python train.py \
+    --workers 8 \
+    --device 0 \
+    --epochs 30 \
+    --batch-size 16 \
+    --data data/dota_v1_poly.yaml \
+    --img 1024 1024 \
+    --cfg cfg/training/yolov7.yaml \
+    --weights ./pretrained/yolov7.pt \
+    --name yolov7 \
+    --hyp data/hyp.finetune_dota.yaml \
+    --noautoanchor 
 ``` -->
 
 Multiple GPU training
