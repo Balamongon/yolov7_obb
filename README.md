@@ -90,7 +90,7 @@ You will get the results:
 This repo is based on [yolov7](https://github.com/WongKinYiu/yolov7), [yolov5_obb](https://github.com/hukaixuan19970627/yolov5_obb). 
 Please see [yolov5_obb](https://github.com/hukaixuan19970627/yolov5_obb) for data preparation.
 
-## Training
+## Training (Not yet train aux model)
 
 Single GPU training
 
