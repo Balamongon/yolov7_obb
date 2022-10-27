@@ -1,18 +1,14 @@
 # parameters
 nc: 80  # number of classes
-depth_multiple: 1.0  # model depth multiple
-width_multiple: 1.0  # layer channel multiple
+depth_multiple: 1.2  # model depth multiple
+width_multiple: 1.2  # layer channel multiple
 
 # anchors
 anchors:
-  - [12,16, 19,36, 40,28]  # P3/8
-  - [36,75, 76,55, 72,146]  # P4/16
-  - [142,110, 192,243, 459,401]  # P5/32
-  - [ 19,27,  44,40,  38,94 ]  # P3/8
   - [ 19,27,  44,40,  38,94 ]  # P3/8
   - [ 96,68,  86,152,  180,137 ]  # P4/16
   - [ 140,301,  303,264,  238,542 ]  # P5/32
-  - [ 436,615,  739,380,  925,792 ]  # P6/64
+  # - [ 436,615,  739,380,  925,792 ]  # P6/64
 
 # yolov7 backbone
 backbone:
@@ -207,5 +203,5 @@ head:
    [83, 1, Conv, [1152, 3, 1]],
    [67, 1, Conv, [1536, 3, 1]],
 
-   [[158,159,160,161,162,163,164,165], 1, IAuxDetect, [nc, anchors]],   # Detect(P3, P4, P5, P6)
+   [[158,159,160], 1, IDetect, [nc, anchors]],   # Detect(P3, P4, P5, P6)
   ]

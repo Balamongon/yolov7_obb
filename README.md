@@ -1,8 +1,7 @@
 # YOLOv7 for Oriented Object Detection
 
-Implementation of paper - [YOLOv7: Trainable bag-of-freebies sets new state-of-the-art for real-time object detectors](https://arxiv.org/abs/2207.02696).
+Implementation of paper - [YOLOv7: Trainable bag-of-freebies sets new state-of-the-art for real-time object detectors](https://arxiv.org/abs/2207.02696)
 
-The code for the implementation of [Yolov5_obb](https://github.com/hukaixuan19970627/yolov5_obb), [Yolov7](https://github.com/WongKinYiu/yolov7).
 
 <img src="./imgs/demo1.png" width="400" height="400"> <img src="./imgs/demo2.png" width="400" height="400">
 
@@ -85,30 +84,23 @@ You will get the results:
 <!-- To measure accuracy, download [COCO-annotations for Pycocotools](http://images.cocodataset.org/annotations/annotations_trainval2017.zip). -->
 
 #
+## Training
 
-## Getting Started 
-This repo is based on [yolov7](https://github.com/WongKinYiu/yolov7), [yolov5_obb](https://github.com/hukaixuan19970627/yolov5_obb). 
-Please see [yolov5_obb](https://github.com/hukaixuan19970627/yolov5_obb) for data preparation.
-
-## Training (Not yet train aux model)
-
-Single GPU training
+Data preparation
 
 ``` shell
-# train yolov7 models
-python train.py \
-    --workers 8 \
-    --device 0 \
-    --epochs 30 \
-    --batch-size 16 \
-    --data data/dota_v1_poly.yaml \
-    --img 1024 1024 \
-    --cfg cfg/training/yolov7.yaml \
-    --weights ./pretrained/yolov7.pt \
-    --name yolov7 \
-    --hyp data/hyp.finetune_dota.yaml \
-    --noautoanchor 
+
 ```
+
+<!-- Single GPU training
+
+``` shell
+# train p5 models
+python train.py --workers 8 --device 0 --batch-size 32 --data data/coco.yaml --img 640 640 --cfg cfg/training/yolov7.yaml --weights '' --name yolov7 --hyp data/hyp.scratch.p5.yaml
+
+# train p6 models
+python train_aux.py --workers 8 --device 0 --batch-size 16 --data data/coco.yaml --img 1280 1280 --cfg cfg/training/yolov7-w6.yaml --weights '' --name yolov7-w6 --hyp data/hyp.scratch.p6.yaml
+``` -->
 
 Multiple GPU training
 
